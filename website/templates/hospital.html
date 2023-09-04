@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    background-color: #00ff66;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 40px); /* Adjust for navbar height */
+  }
+
+  .healthcare-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align only the healthcare text */
+    width: 500px;
+    max-width: 90%;
+  }
+
+  .card-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .details {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: left; /* Align the details text to the left */
+  }
+
+  .button-container {
+    text-align: center; /* Align the button to the left */
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .button:hover {
+    background-color: #0056b3;
+  }
+</style>
+<title>Healthcare Information</title>
+</head>
+<body>
+<div class="navbar">
+  <div class="navbar-title">PATIENT DETAILS</div>
+</div>
+<div class="container">
+  <div class="healthcare-card">
+    <div class="card-heading">AVAILABLE DETAILS</div>
+    <div class="details">
+      <p><strong>Name:</strong> {{data[0]}}</p>
+      <p><strong>Blood Group:</strong> {{data[5]}}</p>
+      <p><strong>Allergies:</strong> {{data[7]}}</p>
+      <p><strong>Diseases:</strong> {{data[6]}}</p>
+      <p><strong>Contact Number:</strong> {{data[9]}}</p>
+      <p><strong>Emergency Number:</strong> {{data[2]}}</p>
+      <p><strong>Aadhar Details:</strong> {{data[4]}}</p>
+      <p><strong>Gender:</strong> {{data[3]}}</p>
+      <p><strong>Age:</strong> {{data[8]}}</p>
+      <p><strong>Adress:</strong> {{data[1]}}</p>
+    </div>
+    <div class="button-container">
+      <button class="button">Report an Accident!</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

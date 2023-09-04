@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #a1e6ef, #f4f5ce);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign-up-card-container{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    margin-top: 100px;
+    width: 20%;
+}
+.main-image{
+    margin-right: 2rem;
+    margin-top: 2rem;
+
+}
+.sign-up-card-container {
+    width: 800px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+.sign-up-card-container::before{
+    content:'';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.25);
+    inset: 0;
+    transform: rotate(-4deg);
+    z-index: -1;
+    border-radius: 10px;
+}
+.header{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.header h1{
+    text-shadow: 1px 1px 1px black;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+.header h1 + div {
+    opacity: 0.8;
+}
+.sign-up-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.sign-up-form .form-item{
+    position: relative;
+}
+.sign-up-form .form-item .form-item-icon{
+    position: absolute;
+    top: 0.2rem;
+    left: 1.4 rem;
+    font-size: 1.3rem;
+    opacity: 0.4;
+}
+#submit{
+    margin-top: 1rem;
+    display: block;
+    background: black;
+    border: none;
+    font-weight: bolder;
+    text-decoration: none;
+    color: whitesmoke;
+    margin-bottom: 1.4rem;
+    width: 14rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.7rem;
+    align-items: center;
+    border: 1px solid #80d4d2;
+    letter-spacing: 4px;
+    justify-content: space-around;
+    cursor: pointer;
+    border-radius: 2px;
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 10px;
+}
+#submit:hover {
+    background: black;
+    color: #ff00cc;
+    box-shadow:
+    inset 0 0 0.8em #ff00cc,
+    0 0 0.8em #ff00cc;
+}
+.form-item-footer {
+    margin-left: 0.2rem;
+    align-items: center;
+    font-size: calc(1rem * 0.8);
+}
+.form-item-footer a{
+    margin-left: 0.2rem;
+    text-decoration: none;
+    color: blue;
+}
+.form-item-footer a:hover{
+    text-decoration: underline;
+}
+.sign-up-form input[type="text"],
+.sign-up-form input[type="password"]{
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 0.7rem 1rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 90%;
+}
+.sign-up-form input:focus{
+    background: whitesmoke;
+}
+.sign-up-form input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    margin-right: 0.3rem;
+    accent-color: black;
+    cursor: pointer;
+}
+.form-item {
+    box-sizing: border-box;
+}
+.sign-up-card-social{
+    display: inline;
+}
+.sign-up-card-social #home{
+    position: relative;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: blue;
+}
+.sign-up-card-social #home:hover{
+    color: red;
+}
+#terms-conditions {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    color: yellow;
+}
+#terms-conditions:target {
+    visibility: visible;
+    opacity: 1;
+}
+.wrapper{
+    margin: 100px auto;
+    padding: 30px;
+    background: black;
+    border-radius: 5px;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    border: 1px solid white;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+}
+.wrapper h1{
+    margin-top: 30px;
+    color: goldenrod;
+    text-shadow: 1px 1px 1px red;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+.wrapper .close{
+    color: blue;
+    text-decoration: none;
+    font-size: 30px;
+}
+.wrapper .content {
+    font-style: italic;
+    color: whitesmoke;
+    margin: 20px auto;
+    font-size: 12px;
+}
+.wrapper .content #text{
+    color: aqua;
+    font-size: 15px;
+    margin: 10px auto;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid white;
+    width: 400px;
+}
+.wrapper .content ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 600px) {
+    .sign-up-card-container {
+        margin-top: 4rem;
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    .wrapper .content #text {
+        width: 90%;
+        padding: 0.1 rem;
+        font-size: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .wrapper .content ul li {
+        font-size: 90%;
+        height: 70%;
+    }
+    .wrapper{
+        height: 90%;
+        margin-bottom: 10%;
+        margin-top: 10%;
+        width: 60%;
+    }
+    .sign-up-card-container #image{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        width: 100%;
+        height: 5rem;
+    }
+    .sign-up-card .header{
+        margin-bottom: 0.6rem;
+    }
+    .header h1{
+        margin-bottom: 0.3rem;
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    .header div{
+        font-size: 12px;
+    }
+    .form-item-footer{
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+    #submit{
+        margin-bottom: 4px;
+    }
+    .sign-up-card-social #home{
+        font-size: 12px;
+    }
+    .sign-up-card-social #home-item{
+        width: 8px;
+        height: 8px;
+    }
+    .sign-up-form input[type="text"],
+    .sign-up-form input[type="password"]{
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 0.7rem 1rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 87%;
+    height: 10px;
+    }
+    .sign-up-form input:focus{
+        background: whitesmoke;
+    }
+}
+@media only screen and (max-width: 700px) and (min-width: 600px) {
+    .sign-up-card-container #image{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 50%;
+    }
+}
+@media only screen and (max-width: 800px) and (min-width: 700px) {
+    .sign-up-card-container #image{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 90%;
+    }
+}

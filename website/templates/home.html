@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Profile</title>
+	<link rel="stylesheet" href="../static/css/profile.css">
+</head>
+<body>
+	<ul>
+		<li><a href="#home" style="font-size: large; margin-top: 4px;">MediUrgencyHub</a></li>
+		<li style="float:right"><a href="/logout"><button type="button" class="log">LogOut</button></a></li>
+		<li style="float:right"><a href="https://pneumoniax-raydetection-themanas.streamlit.app/" style="margin-top: 4px;">Pneumonia Detection</a></li>
+		<li style="float:right"><a  href="#" style="margin-top: 4px;">Home</a></li>
+	  </ul>
+
+	  <div class="details">
+		<div class="image">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+				  <div class="flip-card-front">
+					<img src="https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg" alt="Avatar" style="width:300px;height:400px;">
+				  </div>
+				  <div class="flip-card-back">
+					<img src={{"static/{}.png".format(user.id)}}>
+				  </div>
+				  
+				</div>
+		</div>
+		</div>
+		<div class="p-deatils">
+            <table class="table3" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+				<tr>
+					<td>Name</td>
+					<td>{{user.name}}</td>
+				  </tr>
+				<tr>
+				  <td>Age</td>
+				  <td>{{user.patientdetail[0].age}}</td>
+				</tr>
+				<tr>
+				  <td>Gender</td>
+				  <td>{{user.patientdetail[0].gender}}</td>
+				</tr>
+				<tr>
+				  <td>Blood Group</td>
+				  <td>{{user.patientdetail[0].bloodgroup}}</td>
+				</tr>
+				<tr>
+				  <td>Address</td>
+				  <td>{{user.patientdetail[0].address}}</td>
+				</tr>
+				<tr>
+				  <td>Phone Number</td>
+				  <td>{{user.phone}}</td>
+				</tr>
+				<tr>
+				  <td><b><span style="color: red;">Emergency Number</span></b></td>
+				  <td><b><span style="color: red;">{{user.patientdetail[0].emerphone}}</span></b></td>
+				</tr>
+			  </table>
+		</div>
+	  </div>
+
+	  <div class="container2">
+		<div class="text">
+			<h1>Search Nearby Hospitals, Now!!</h1>
+			<p>"Embrace each day as an opportunity to create a masterpiece of resilience, courage, and strength in the gallery of your life's journey."</p>
+		</div>
+		<div class="button">
+			<a href="https://www.google.com/search?q=hospitals+near+me&oq=hospitals+nea&gs_lcrp=EgZjaHJvbWUqEAgAEAAYgwEYsQMYyQMYgAQyEAgAEAAYgwEYsQMYyQMYgAQyBggBEEUYOTIKCAIQABiSAxiKBTIKCAMQABiSAxiKBTIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDQyMzRqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8"><button type="button"  class="btn" value="View">View</button></a>
+		</div>
+	  </div>
+      <div class="head2">
+	  <div class="head">
+      <center><h1>Your Medical Reports</h1></center>
+	  <center><p style="font-size: 15px; font-family: 'Times New Roman', Times, serif;"> <br><br>
+		"Your health journey, your strength – one report at a time."</p></center>
+	  </div>
+	  <div class="table2">
+		<table style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+			<tr style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+			  <th>ID</th>
+			  <th>Report Name</th>
+			  <th>View Report</th>
+			</tr>
+			<tr>
+			  <td>1</td>
+			  <td>Report 1</td>
+			  <td>			<a href="../static/reports/WC12.pdf"><button type="button"  class="btn2" value="View">View</button></a>
+			  </td>
+			</tr>
+			<tr>
+			  <td>2</td>
+			  <td>Report 2</td>
+			  <td>			<a href="../static/reports/WC12.pdf"><button type="button"  class="btn2" value="View">View</button></a>
+			  </td>
+			</tr>
+			<tr>
+			  <td>3</td>
+			  <td>Report 3</td>
+			  <td>			<a href="../static/reports/WC12.pdf"><button type="button"  class="btn2" value="View">View</button></a>
+			  </td>
+			</tr>
+			<tr>
+			  <td>4</td>
+			  <td>Report 4</td>
+			  <td>			<a href="../static/reports/WC12.pdf"><button type="button"  class="btn2" value="View">View</button></a>
+			  </td>
+			</tr>
+		  </table>
+	  </div>
+	  </div>
+
+</body>
+</html>

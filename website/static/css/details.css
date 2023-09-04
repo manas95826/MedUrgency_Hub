@@ -1,0 +1,63 @@
+
+      input{
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 32px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+
+   input[type="radio"]{
+        display: inline;
+        width : 10%;
+
+   }
+    .main{
+        text-align: left;
+        width: 45%;
+        margin-left: 52%;
+        margin-top: 0px;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    h1{
+        text-align: center;
+        margin-left: 50%;
+
+    }
+    .butt{
+        margin-top: 40px;
+        margin-right: 250px;
+    }
+
+    button{
+        float:right;
+        background-color:#4682A9;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 2px ;
+        border: none;
+        cursor: pointer;
+        width: 200px;
+        align-content: center;
+        margin-right: 125px;
+        margin-top: 20px;
+    }
+    
+    button>a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:visited{
+        text-decoration: none;
+    }
+    .hjhjh{
+        margin-bottom: -750px;
+        width: 50%;
+        height: 850px;
+        margin-top: -100px;
+        overflow: hidden;
+    }

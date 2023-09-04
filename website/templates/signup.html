@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign_up</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+{% include "alert.html" %}
+        <div class="main">
+             <div class="sign-up-card-container">
+                <div class="main-image">
+                    <img style="border-radius: 20px;height: 430px;margin-top: -15px" src="https://t3.ftcdn.net/jpg/04/67/37/12/360_F_467371208_2cBvWthKecbY7PPW7rxmz99pKSkJPDPm.jpg" width="400" height="500"  id="image">
+                </div>
+                <div class="sign-up-container">
+                    <div class="sign-up-card">
+                        <div class="header">
+                            <h1>Sign up</h1>
+                            <div>Sign-up and access our platform!</div>
+                        </div>
+                    </div>
+                    <form method="POST">
+                    <div class="sign-up-form">
+
+                        <div class="form-item">
+                            <span class="material-symbols-rounded">call</span>
+                            <input type="text" id="phone" name="phone" placeholder="Enter mobile number" maxlength="100" required autofocus>
+                        </div>
+                        <div class="form-item">
+                            <span class="material-symbols-rounded">format_quote</span>
+                            <input type="text" id="name" name="name" placeholder="Enter Your Name" maxlength="100" required autofocus>
+                        </div>
+                        <div class="form-item">
+                            <span class="material-symbols-rounded">mail</span>
+                            <input type="text" id="email" name="email" placeholder="Enter E-mail" maxlength="100" required autofocus>
+                        </div>
+                        <div class="form-item">
+                            <span class="material-symbols-rounded">lock</span>
+                            <input type="password" id="password" name="password" placeholder="Create a password" maxlength="100" required>
+                        </div>
+                               <button id="submit" ><form action="login.html">Submit</form></button>
+                    </div>
+                    </form>
+
+                        </div>
+                    </div>
+
+             </div>
+        </div>
+    </div>
+
+</body>
+</html>

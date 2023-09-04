@@ -1,0 +1,43 @@
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>verification</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+      <style>
+        body{
+          background-image: url("https://media.istockphoto.com/id/1138972841/vector/background-frame-of-tropical-plants.jpg?s=612x612&w=0&k=20&c=b5nV3UotRuXZm6Gays8Ajj_STks9MDCK2x4C7LYlynk=");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      </style>
+    </head>
+
+    <body>
+    {% include "alert.html" %}
+        <div class="vh-100 d-flex justify-content-center align-items-center ">
+            <div class="col-md-5 p-5 shadow-sm border rounded-5 border-primary bg-white">
+                <h2 class="text-center mb-4 text-primary">Welcome </h2>
+                <form method="POST">
+                    <div class="mb-3">
+                        <label for="key" class="form-label">ENTER key</label>
+                        <input type="text" class="form-control border border-primary" id="key" name="key" aria-describedby="emailHelp">
+
+                    </div>
+                </form>
+                    <div class="d-grid">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>
