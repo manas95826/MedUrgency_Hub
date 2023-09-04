@@ -1,7 +1,7 @@
 # MedUrgencyHub- Time-Saving Solutions in Healthcare: A Curated Approach
 
 ## Deployed site(only ml models left to deploy, is there in github itself)
-https://medurgencyhub.onrender.com/
+https://medurgency-hub-zxm3.onrender.com
 
 ## Introduction
 
